@@ -7,6 +7,8 @@ gem 'rails', '3.2.12'
 
 gem 'mysql2'
 
+gem 'formtastic'
+
 #respec for the development and test environments
 group :development, :test do
   gem 'rspec-rails'

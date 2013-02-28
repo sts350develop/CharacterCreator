@@ -11,7 +11,8 @@ class AssetsController < ApplicationController
   end
 
   # GET /assets/1
-  # GET /assets/1.json
+  # GET /assets/1.json                                                                                                  +
+
   def show
     @asset = Asset.find(params[:id])
 
