@@ -10,6 +10,9 @@ gem 'mysql2'
 #respec for the development and test environments
 group :development, :test do
   gem 'rspec-rails'
+  gem 'cucumber-rails', :require => false
+  gem 'database_cleaner'
+  gem 'webrat'
 end
 
 # Gems used only for assets and not required
