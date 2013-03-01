@@ -7,8 +7,8 @@ CharacterCreator::Application.configure do
   # and recreated between test runs. Don't rely on the data there!
   config.cache_classes = true
 
-  # Configure static asset server for tests with Cache-Control for performance
-  config.serve_static_assets = true
+  # Configure static image server for tests with Cache-Control for performance
+  config.serve_static_images = true
   config.static_cache_control = "public, max-age=3600"
 
   # Log error messages when you accidentally call methods on nil
@@ -36,12 +36,11 @@ CharacterCreator::Application.configure do
   config.active_support.deprecation = :stderr
 
   # from RailsCasts #155 beginning with cucumber only for test environment
-
 =begin
-  config.gem "rspec", :lib => false, :version => "2.13.0"
-  config.gem "rspec-rails", :lib => false, :version => "2.13.0"
-  config.gem "webrat", :lib => false, :version => ">=0.4.3"
-  config.gem "cucumber", :lib => false, :version => ">=0.2.2"
+  config.gem "rspec", :lib => false
+  config.gem "rspec-rails", :lib => false
+  config.gem "webrat", :lib => false
+  config.gem "cucumber", :lib => false
 =end
 
   end

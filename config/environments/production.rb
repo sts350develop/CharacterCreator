@@ -8,20 +8,20 @@ CharacterCreator::Application.configure do
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
 
-  # Disable Rails's static asset server (Apache or nginx will already do this)
-  config.serve_static_assets = false
+  # Disable Rails's static image server (Apache or nginx will already do this)
+  config.serve_static_images = false
 
   # Compress JavaScripts and CSS
-  config.assets.compress = true
+  config.images.compress = true
 
-  # Don't fallback to assets pipeline if a precompiled asset is missed
-  config.assets.compile = false
+  # Don't fallback to images pipeline if a precompiled image is missed
+  config.images.compile = false
 
-  # Generate digests for assets URLs
-  config.assets.digest = true
+  # Generate digests for images URLs
+  config.images.digest = true
 
-  # Defaults to nil and saved in location specified by config.assets.prefix
-  # config.assets.manifest = YOUR_PATH
+  # Defaults to nil and saved in location specified by config.images.prefix
+  # config.images.manifest = YOUR_PATH
 
   # Specifies the header that your server uses for sending files
   # config.action_dispatch.x_sendfile_header = "X-Sendfile" # for apache
@@ -42,11 +42,11 @@ CharacterCreator::Application.configure do
   # Use a different cache store in production
   # config.cache_store = :mem_cache_store
 
-  # Enable serving of images, stylesheets, and JavaScripts from an asset server
-  # config.action_controller.asset_host = "http://assets.example.com"
+  # Enable serving of images, stylesheets, and JavaScripts from an image server
+  # config.action_controller.image_host = "http://images.example.com"
 
-  # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
-  # config.assets.precompile += %w( search.js )
+  # Precompile additional images (application.js, application.css, and all non-JS/CSS are already added)
+  # config.images.precompile += %w( search.js )
 
   # Disable delivery errors, bad email addresses will be ignored
   # config.action_mailer.raise_delivery_errors = false

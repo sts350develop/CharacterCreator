@@ -2,62 +2,62 @@ Using the default profile...
 Feature: Manage Assets
   In order to make a doll
   as a user
-  I want to create and manage assets
+  I want to create and manage images
 
-  Scenario: Assets List              # features\manage_assets.feature:6
-    Given I have assets              # features\manage_assets.feature:7
-      Undefined step: "I have assets" (Cucumber::Undefined)
-      features\manage_assets.feature:7:in `Given I have assets'
-    When I go to the list of assets  # features\manage_assets.feature:8
-      Undefined step: "I go to the list of assets" (Cucumber::Undefined)
-      features\manage_assets.feature:8:in `When I go to the list of assets'
-    Then I should see all the assets # features\manage_assets.feature:9
-      Undefined step: "I should see all the assets" (Cucumber::Undefined)
-      features\manage_assets.feature:9:in `Then I should see all the assets'
+  Scenario: images List              # features\manage_images.feature:6
+    Given I have images              # features\manage_images.feature:7
+      Undefined step: "I have images" (Cucumber::Undefined)
+      features\manage_images.feature:7:in `Given I have images'
+    When I go to the list of images  # features\manage_images.feature:8
+      Undefined step: "I go to the list of images" (Cucumber::Undefined)
+      features\manage_images.feature:8:in `When I go to the list of images'
+    Then I should see all the images # features\manage_images.feature:9
+      Undefined step: "I should see all the images" (Cucumber::Undefined)
+      features\manage_images.feature:9:in `Then I should see all the images'
 
-  Scenario: Create Valid Asset              # features\manage_assets.feature:11
-    Given I have no assets                  # features\manage_assets.feature:12
-      Undefined step: "I have no assets" (Cucumber::Undefined)
-      features\manage_assets.feature:12:in `Given I have no assets'
-    And I am on the list of assets          # features\manage_assets.feature:13
-      Undefined step: "I am on the list of assets" (Cucumber::Undefined)
-      features\manage_assets.feature:13:in `And I am on the list of assets'
-    When I follow "Upload Asset"            # features\manage_assets.feature:14
-      Undefined step: "I follow "Upload Asset"" (Cucumber::Undefined)
-      features\manage_assets.feature:14:in `When I follow "Upload Asset"'
-    And I upload a file                     # features\manage_assets.feature:15
+  Scenario: Create Valid image              # features\manage_images.feature:11
+    Given I have no images                  # features\manage_images.feature:12
+      Undefined step: "I have no images" (Cucumber::Undefined)
+      features\manage_images.feature:12:in `Given I have no images'
+    And I am on the list of images          # features\manage_images.feature:13
+      Undefined step: "I am on the list of images" (Cucumber::Undefined)
+      features\manage_images.feature:13:in `And I am on the list of images'
+    When I follow "Upload image"            # features\manage_images.feature:14
+      Undefined step: "I follow "Upload image"" (Cucumber::Undefined)
+      features\manage_images.feature:14:in `When I follow "Upload image"'
+    And I upload a file                     # features\manage_images.feature:15
       Undefined step: "I upload a file" (Cucumber::Undefined)
-      features\manage_assets.feature:15:in `And I upload a file'
-    Then I should see "New Asset Uploaded." # features\manage_assets.feature:16
-      Undefined step: "I should see "New Asset Uploaded."" (Cucumber::Undefined)
-      features\manage_assets.feature:16:in `Then I should see "New Asset Uploaded."'
-    And I should have 1 asset               # features\manage_assets.feature:17
-      Undefined step: "I should have 1 asset" (Cucumber::Undefined)
-      features\manage_assets.feature:17:in `And I should have 1 asset'
+      features\manage_images.feature:15:in `And I upload a file'
+    Then I should see "New image Uploaded." # features\manage_images.feature:16
+      Undefined step: "I should see "New image Uploaded."" (Cucumber::Undefined)
+      features\manage_images.feature:16:in `Then I should see "New image Uploaded."'
+    And I should have 1 image               # features\manage_images.feature:17
+      Undefined step: "I should have 1 image" (Cucumber::Undefined)
+      features\manage_images.feature:17:in `And I should have 1 image'
 
 2 scenarios (2 undefined)
 9 steps (9 undefined)
-0m1.151s
+0m1.110s
 
 You can implement step definitions for undefined steps with these snippets:
 
-Given /^I have assets$/ do
+Given /^I have images$/ do
   pending # express the regexp above with the code you wish you had
 end
 
-When /^I go to the list of assets$/ do
+When /^I go to the list of images$/ do
   pending # express the regexp above with the code you wish you had
 end
 
-Then /^I should see all the assets$/ do
+Then /^I should see all the images$/ do
   pending # express the regexp above with the code you wish you had
 end
 
-Given /^I have no assets$/ do
+Given /^I have no images$/ do
   pending # express the regexp above with the code you wish you had
 end
 
-Given /^I am on the list of assets$/ do
+Given /^I am on the list of images$/ do
   pending # express the regexp above with the code you wish you had
 end
 
@@ -73,7 +73,7 @@ Then /^I should see "(.*?)"$/ do |arg1|
   pending # express the regexp above with the code you wish you had
 end
 
-Then /^I should have (\d+) asset$/ do |arg1|
+Then /^I should have (\d+) image$/ do |arg1|
   pending # express the regexp above with the code you wish you had
 end
 

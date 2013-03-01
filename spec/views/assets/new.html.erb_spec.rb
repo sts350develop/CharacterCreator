@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe "assets/new" do
+describe "images/new" do
   before(:each) do
     assign(:asset, stub_model(Asset).as_new_record)
   end

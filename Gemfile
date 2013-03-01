@@ -14,12 +14,13 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'cucumber-rails', :require => false
   gem 'database_cleaner'
+  gem 'capybara'
   gem 'webrat'
 end
 
-# Gems used only for assets and not required
+# Gems used only for images and not required
 # in production environments by default.
-group :assets do
+group :images do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
 

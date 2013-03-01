@@ -3,10 +3,10 @@ require File.expand_path('../boot', __FILE__)
 require 'rails/all'
 
 if defined?(Bundler)
-  # If you precompile assets before deploying to production, use this line
-  Bundler.require(*Rails.groups(:assets => %w(development test)))
-  # If you want your assets lazily compiled in production, use this line
-  # Bundler.require(:default, :assets, Rails.env)
+  # If you precompile images before deploying to production, use this line
+  Bundler.require(*Rails.groups(:images => %w(development test)))
+  # If you want your images lazily compiled in production, use this line
+  # Bundler.require(:default, :images, Rails.env)
 end
 
 module CharacterCreator
@@ -53,10 +53,10 @@ module CharacterCreator
     # parameters by using an attr_accessible or attr_protected declaration.
     config.active_record.whitelist_attributes = true
 
-    # Enable the asset pipeline
+    # Enable the image pipeline
     config.assets.enabled = true
 
-    # Version of your assets, change this if you want to expire all your assets
+    # Version of your images, change this if you want to expire all your images
     config.assets.version = '1.0'
   end
 end

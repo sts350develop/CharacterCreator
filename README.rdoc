@@ -156,7 +156,7 @@ PostgreSQL and SQLite 3.
 The default directory structure of a generated Ruby on Rails application:
 
   |-- app
-  |   |-- assets
+  |   |-- images
   |       |-- images
   |       |-- javascripts
   |       `-- stylesheets
@@ -189,14 +189,14 @@ The default directory structure of a generated Ruby on Rails application:
   |   |-- sessions
   |   `-- sockets
   `-- vendor
-      |-- assets
+      |-- images
           `-- stylesheets
       `-- plugins
 
 app
   Holds all the code that's specific to this particular application.
 
-app/assets
+app/images
   Contains subdirectories for images, stylesheets, and JavaScript files.
 
 app/controllers

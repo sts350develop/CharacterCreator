@@ -4,31 +4,31 @@ describe AssetsController do
   describe "routing" do
 
     it "routes to #index" do
-      get("/assets").should route_to("assets#index")
+      get("/images").should route_to("images#index")
     end
 
     it "routes to #new" do
-      get("/assets/new").should route_to("assets#new")
+      get("/images/new").should route_to("images#new")
     end
 
     it "routes to #show" do
-      get("/assets/1").should route_to("assets#show", :id => "1")
+      get("/images/1").should route_to("images#show", :id => "1")
     end
 
     it "routes to #edit" do
-      get("/assets/1/edit").should route_to("assets#edit", :id => "1")
+      get("/images/1/edit").should route_to("images#edit", :id => "1")
     end
 
     it "routes to #create" do
-      post("/assets").should route_to("assets#create")
+      post("/images").should route_to("images#create")
     end
 
     it "routes to #update" do
-      put("/assets/1").should route_to("assets#update", :id => "1")
+      put("/images/1").should route_to("images#update", :id => "1")
     end
 
     it "routes to #destroy" do
-      delete("/assets/1").should route_to("assets#destroy", :id => "1")
+      delete("/images/1").should route_to("images#destroy", :id => "1")
     end
 
   end

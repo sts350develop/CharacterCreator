@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe "assets/edit" do
+describe "images/edit" do
   before(:each) do
     @asset = assign(:asset, stub_model(Asset))
   end
