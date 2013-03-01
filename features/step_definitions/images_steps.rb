@@ -1,13 +1,13 @@
-Given /^I have images$/ do
-  user = User.create
-  image = user.images.build
-  image.save
-end
-
-When /^I go to the list of images$/ do
+Given /^I am on the images page$/ do
   '/images'
 end
 
-Then /^I should see a list of images$/ do
-  Image.all.length.should page.length
+Given /^(\d+) images already exist$/ do |count|
+  count.to_i.times {
+    FactoryGirl.create(:image)
+  }
+end
+
+Then /^I should see a table containg those (\d+) images$/ do |count|
+  page.all('table#imagesTable tr').count.should == count
 end

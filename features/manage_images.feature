@@ -3,10 +3,12 @@ Feature: Manage Images
   as a user
   I want to create and manage images
 
-Scenario: Images List
-  Given I have images
-  When I go to the list of images
-  Then I should see a list of images
+Scenario: viewing existing images
+  Given I am on the images page
+  And 4 images already exist
+  Then I should see a table containg those 4 images
+  And have the option to show images
+  And have the option to delete images
 
 Scenario: Create Valid Image
   Given I have no images

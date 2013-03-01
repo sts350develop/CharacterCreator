@@ -36,6 +36,7 @@ CharacterCreator::Application.configure do
   config.active_support.deprecation = :stderr
 
   # from RailsCasts #155 beginning with cucumber only for test environment
+  config.gem "webrat", :version => ">=0.7.3"
 =begin
   config.gem "rspec", :lib => false
   config.gem "rspec-rails", :lib => false

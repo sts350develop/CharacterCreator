@@ -16,6 +16,7 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'capybara'
   gem 'webrat'
+  gem 'factory_girl_rails'
 end
 
 # Gems used only for images and not required
