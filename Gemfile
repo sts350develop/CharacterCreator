@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+group :development, :test do
 gem 'rails', '3.2.12'
 
 # Bundle edge Rails instead:
@@ -10,13 +10,14 @@ gem 'mysql2'
 gem 'formtastic'
 
 #respec for the development and test environments
-group :development, :test do
+
   gem 'rspec-rails'
   gem 'cucumber-rails', :require => false
   gem 'database_cleaner'
   gem 'capybara'
   gem 'webrat'
   gem 'factory_girl_rails'
+  gem 'formtastic'
 end
 
 # Gems used only for images and not required

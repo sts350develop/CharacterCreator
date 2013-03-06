@@ -1,9 +1,31 @@
-<%= semantic_form_for @image do |f| %>
+<%= semantic_form_for(@image) do |f| %>
 
-    <%= f.inputs %>
-<% end %>
+    <% if @image.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@image.errors.count, "error") %> prohibited this image from being saved:</h2>
 
-<%= f.actions do %>
-    <%= f.action :submit, :as => :button %>
-    <%= f.action :cancel, :as => :link %>
+          <ul>
+            <% @image.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <div class="field">
+      <%= f.input :name, :label => "Name:" %>
+    </div>
+    <div class="field">
+      <%= f.input :category %>
+    </div>
+    <div class="field">
+      <%= f.input :z_index %>
+    </div>
+    <div class="field">
+      <%= f.input :pathway %>
+    </div>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+
 <% end %>
