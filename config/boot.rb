@@ -1,5 +1,5 @@
 require 'rubygems'
-require 'RMagick'
+#require 'RMagick'
 
 # Set up gems listed in the Gemfile.
 ENV['BUNDLE_GEMFILE'] ||= File.expand_path('../../Gemfile', __FILE__)
