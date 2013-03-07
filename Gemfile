@@ -10,7 +10,6 @@ gem 'mysql2'
 gem 'formtastic'
 gem 'paperclip'
 
-
 #respec for the development and test environments
 group :development, :test do
   gem 'rspec-rails'
