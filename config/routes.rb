@@ -1,4 +1,6 @@
 CharacterCreator::Application.routes.draw do
+  devise_for :users
+
   resources :users, :images
   root :to => "images#index"
 

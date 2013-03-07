@@ -12,6 +12,7 @@ gem 'paperclip'
 gem 'less-rails'
 gem 'therubyracer'
 gem 'twitter-bootstrap-rails'
+gem 'devise'
 
 #respec for the development and test environments
 group :development, :test do
