@@ -9,6 +9,9 @@ gem 'mysql2'
 
 gem 'formtastic'
 gem 'paperclip'
+gem 'less-rails'
+gem 'therubyracer'
+gem 'twitter-bootstrap-rails'
 
 #respec for the development and test environments
 group :development, :test do
@@ -18,18 +21,13 @@ group :development, :test do
   gem 'capybara'
   gem 'webrat'
   gem 'factory_girl_rails'
-  gem 'formtastic'
 end
 
 # Gems used only for images and not required
 # in production environments by default.
-group :images do
+group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
-
-  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', :platforms => :ruby
-
   gem 'uglifier', '>= 1.0.3'
 end
 

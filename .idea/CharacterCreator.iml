@@ -33,6 +33,7 @@
     <orderEntry type="library" scope="PROVIDED" name="coffee-rails (v3.2.2, ruby-1.9.3-p125) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="coffee-script (v2.2.0, ruby-1.9.3-p125) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="coffee-script-source (v1.6.1, ruby-1.9.3-p125) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="commonjs (v0.2.6, ruby-1.9.3-p125) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="cucumber (v1.2.2, ruby-1.9.3-p125) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="cucumber-rails (v1.3.0, ruby-1.9.3-p125) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="database_cleaner (v0.9.1, ruby-1.9.3-p125) [gem]" level="application" />
@@ -49,6 +50,8 @@
     <orderEntry type="library" scope="PROVIDED" name="journey (v1.0.4, ruby-1.9.3-p125) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jquery-rails (v2.2.1, ruby-1.9.3-p125) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="json (v1.7.7, ruby-1.9.3-p125) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="less (v2.3.1, ruby-1.9.3-p125) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="less-rails (v2.3.2, ruby-1.9.3-p125) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mail (v2.4.4, ruby-1.9.3-p125) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mime-types (v1.21, ruby-1.9.3-p125) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="multi_json (v1.6.1, ruby-1.9.3-p125) [gem]" level="application" />
@@ -64,6 +67,7 @@
     <orderEntry type="library" scope="PROVIDED" name="railties (v3.2.12, ruby-1.9.3-p125) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rake (v10.0.3, ruby-1.9.3-p125) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rdoc (v3.12.2, ruby-1.9.3-p125) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="ref (v1.0.2, ruby-1.9.3-p125) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rspec-core (v2.13.0, ruby-1.9.3-p125) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rspec-expectations (v2.13.0, ruby-1.9.3-p125) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rspec-mocks (v2.13.0, ruby-1.9.3-p125) [gem]" level="application" />
@@ -73,9 +77,11 @@
     <orderEntry type="library" scope="PROVIDED" name="sass-rails (v3.2.6, ruby-1.9.3-p125) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="selenium-webdriver (v2.31.0, ruby-1.9.3-p125) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sprockets (v2.2.2, ruby-1.9.3-p125) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="therubyracer (v0.11.0beta1, ruby-1.9.3-p125) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thor (v0.17.0, ruby-1.9.3-p125) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tilt (v1.3.5, ruby-1.9.3-p125) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="treetop (v1.4.12, ruby-1.9.3-p125) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="twitter-bootstrap-rails (v2.2.6, ruby-1.9.3-p125) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tzinfo (v0.3.36, ruby-1.9.3-p125) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="uglifier (v1.3.0, ruby-1.9.3-p125) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="webrat (v0.7.3, ruby-1.9.3-p125) [gem]" level="application" />
