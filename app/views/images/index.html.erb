@@ -1,17 +1,41 @@
-<h1>Listing images</h1>
+<h1 xmlns="http://www.w3.org/1999/html">Listing images</h1>
 
 <% @images.each do |image| %>
-  <tr>
-    <td><%= image.name %></td>
-    <td><%= image.category %></td>
-    <td><%= image.pathway %></td>
-    <td><%= link_to 'Show', image %></td>
-    <td><%= link_to 'Edit', edit_image_path(image) %></td>
-    <td><%= link_to 'Destroy', image, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
+    <table border="1">
+      <tr>
+        <div class="field">
+          <td>
+            <b>Name:</b>
+            <%= image.name %>
+          </td>
+      </tr>
+      <tr>
+      <td>
+        <b>Category:</b>
+        <%= image.category %>
+      </td>
+      </div>
+      </tr >
+      <tr>
+        <td>
+          <div>
+            <%= image_tag image.uploaded %>
+          </div>
+        </td>
+      </tr>
+    </table>
+
+        <div class="field">
+          <td><%= link_to 'Show', image %></td>
+          <td><%= link_to 'Edit', edit_image_path(image) %></td>
+          <td><%= link_to 'Destroy', image, method: :delete, data: {confirm: 'Are you sure?'} %></td>
+        </div>
+
+
+    <br/>
 <% end %>
 </table>
 
-<br />
+<br/>
 
 <%= link_to 'New image', new_image_path %>

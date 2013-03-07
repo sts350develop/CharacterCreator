@@ -27,6 +27,9 @@
     <div class="field">
       <%= f.file_field :uploaded %>
     </div>
+    <div class="field">
+      <%= image_tag @image.uploaded.url %>
+    </div>
     <div class="actions">
       <%= f.submit %>
     </div>
