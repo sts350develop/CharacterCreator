@@ -12,16 +12,8 @@
   <dd><%= @image.category %></dd>
   <dt><strong><%= model_class.human_attribute_name(:user_id) %>:</strong></dt>
   <dd><%= @image.user_id %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:pathway) %>:</strong></dt>
-  <dd><%= @image.pathway %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:uploaded_file_name) %>:</strong></dt>
-  <dd><%= @image.uploaded_file_name %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:uploaded_content_type) %>:</strong></dt>
-  <dd><%= @image.uploaded_content_type %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:uploaded_file_size) %>:</strong></dt>
-  <dd><%= @image.uploaded_file_size %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:uploaded_updated_at) %>:</strong></dt>
-  <dd><%= @image.uploaded_updated_at %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:uploaded) %>:</strong></dt>
+  <dd><%= image_tag @image.uploaded %></dd>
 </dl>
 
 <div class="form-actions">

@@ -11,6 +11,7 @@
       <th><%= model_class.human_attribute_name(:category) %></th>
       <th><%= model_class.human_attribute_name(:user_id) %></th>
       <th><%= model_class.human_attribute_name(:pathway) %></th>
+      <th><%= model_class.human_attribute_name(:uploaded) %></th>
       <th><%= model_class.human_attribute_name(:uploaded_file_name) %></th>
       <th><%= model_class.human_attribute_name(:uploaded_content_type) %></th>
       <th><%= model_class.human_attribute_name(:uploaded_file_size) %></th>
@@ -28,6 +29,7 @@
         <td><%= image.category %></td>
         <td><%= image.user_id %></td>
         <td><%= image.pathway %></td>
+        <td><%= image_tag image.uploaded %></td>
         <td><%= image.uploaded_file_name %></td>
         <td><%= image.uploaded_content_type %></td>
         <td><%= image.uploaded_file_size %></td>
