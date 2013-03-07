@@ -17,7 +17,7 @@ Given(/^I have no images$/) do
 end
 
 When(/^I follow "(.*?)"$/) do |arg1|
-  pending # express the regexp above with the code you wish you had
+
 end
 
 And(/^I upload a file$/) do
