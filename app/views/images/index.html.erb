@@ -1,4 +1,4 @@
-<h1 xmlns="http://www.w3.org/1999/html">Listing images</h1>
+<h1>Listing images</h1>
 
 <% @images.each do |image| %>
     <table border="1">
@@ -26,16 +26,12 @@
     </table>
 
         <div class="field">
-          <td><%= link_to 'Show', image %></td>
-          <td><%= link_to 'Edit', edit_image_path(image) %></td>
-          <td><%= link_to 'Destroy', image, method: :delete, data: {confirm: 'Are you sure?'} %></td>
+          <%= link_to 'Show', image %>
+          <%= link_to 'Edit', edit_image_path(image) %>
+          <%= link_to 'Destroy', image, method: :delete, data: {confirm: 'Are you sure?'} %>
         </div>
-
-
     <br/>
 <% end %>
-</table>
-
 <br/>
 
 <%= link_to 'New image', new_image_path %>
