@@ -17,14 +17,17 @@
 <div id="container">
   <div class="navbar navbar-fixed-top">
     <div class="navbar-inner">
-      <ul class="nav nav-pills pull-right">
+
+      <ul class="nav nav-pills pull-right inline">
     <% if user_signed_in? %>
-        Logged in as <strong><%= current_user.email %></strong>.
-        <%= link_to 'Edit profile', edit_user_registration_path %> |
-        <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+            <li><%= link_to 'Assets', images_path %></li>
+            <li><%= link_to 'My Characters'%></li>
+       <li> <%= link_to "Logged in as #{current_user.email}", user_path(current_user)%> </li>
+        <li><%= link_to 'Edit profile', edit_user_registration_path %></li>
+        <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
     <% else %>
-        <%= link_to "Sign up", new_user_registration_path %> |
-        <%= link_to "Login", new_user_session_path %>
+       <li><%= link_to "Sign up", new_user_registration_path %></li>
+        <li><%= link_to "Login", new_user_session_path %></li>
     <% end %>
           </ul>
 
