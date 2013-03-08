@@ -10,9 +10,12 @@ gem 'mysql2'
 gem 'formtastic'
 gem 'paperclip'
 gem 'less-rails'
-gem 'therubyracer'
 gem 'twitter-bootstrap-rails'
 gem 'devise'
+gem 'omniauth'
+gem 'omniauth-facebook'
+#gem 'libv8', '=3.11.9.0'
+gem 'therubyracer', '=0.11.0beta1'
 
 #respec for the development and test environments
 group :development, :test do

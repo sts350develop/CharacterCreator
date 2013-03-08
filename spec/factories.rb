@@ -8,3 +8,10 @@ FactoryGirl.define do
     pathway "/images/base/blue_skin"
   end
 end
+
+FactoryGirl.define do
+  factory :doll do
+    dollrole "Avatar"
+    name "John Smith"
+    end
+  end
