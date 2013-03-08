@@ -11,11 +11,43 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130307231053) do
+ActiveRecord::Schema.define(:version => 20130308180513) do
+
+  create_table "authentications", :force => true do |t|
+    t.integer  "user_id"
+    t.string   "provider"
+    t.string   "uid"
+    t.string   "index"
+    t.string   "create"
+    t.string   "destroy"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "bodies", :force => true do |t|
+    t.string   "imagename"
+    t.integer  "z_index"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "clothingsets", :force => true do |t|
+    t.string   "imagename"
+    t.integer  "z_index"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "dolls", :force => true do |t|
     t.string   "dollrole"
     t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "heads", :force => true do |t|
+    t.string   "imagename"
+    t.integer  "z_index"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
