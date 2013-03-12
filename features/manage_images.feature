@@ -11,8 +11,8 @@ Feature: Manage the images
   Scenario: Create a valid image
     Given I have no images
     And I am on the images page
-    When I follow the "New Image" link
-    And I follow the "Upload Image" link
+    When I follow "New Image"
+    And I press "Choose File"
     And I upload a file
     Then I should see "New image Uploaded."
     And I should have 1 image

@@ -3,4 +3,5 @@ class Doll < ActiveRecord::Base
   has_one :head
   has_one :body
   has_one :clothingset
+  validates :dollrole, :name, :presence => true
 end

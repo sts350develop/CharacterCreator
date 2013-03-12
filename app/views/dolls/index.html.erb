@@ -18,4 +18,5 @@
 
 <br />
 
-<%= link_to 'New Doll', new_doll_path %>
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_doll_path, :class => 'btn' %>

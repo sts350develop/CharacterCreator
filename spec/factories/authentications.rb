@@ -2,11 +2,7 @@
 
 FactoryGirl.define do
   factory :authentication do
-    user_id 1
-    provider "MyString"
-    uid "MyString"
-    index "MyString"
-    create "MyString"
-    destroy "MyString"
+    user_id 100
+    uid "SomeID"
   end
 end

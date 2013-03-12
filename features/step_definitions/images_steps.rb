@@ -16,10 +16,14 @@ Given(/^I have no images$/) do
   Image.delete_all
 end
 
-When(/^I follow "(.*?)"$/) do |arg1|
+When /^(?:|I )follow "([^"]*)"$/ do |arg1|
+  click_link (arg1)
+end
 
+When /^(?:|I )press "([^"]*)"$/ do |button|
+  click_button(button)
 end
 
 And(/^I upload a file$/) do
-  pending # express the regexp above with the code you wish you had
+  run_simple %(bundle exec #{runner_command} "User.create!(:attachment => File.open('#{fixture_path(filename)}'))")
 end

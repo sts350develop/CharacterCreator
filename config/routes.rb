@@ -1,11 +1,19 @@
 CharacterCreator::Application.routes.draw do
   get "authentications/create"
   get "authentications/destroy"
+  get "dolls/new"
+  get "images/new"
+  get "users/new"
 
   devise_for :users
 
-  resources :users, :images, :authentications
-  resources  :dolls, :bodys, :heads, :clothingsets
+  resources :users
+  resources :images
+  resources :authentications
+  resources :dolls
+  resources :bodys
+  resources :heads
+  resources :clothingsets
   root :to => "dolls#index"
   match '/auth/:provider/callback' => 'authentications#create'
   # The priority is based upon order of creation:
