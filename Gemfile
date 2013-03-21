@@ -16,6 +16,7 @@ gem 'omniauth'
 gem 'omniauth-facebook'
 #gem 'libv8', '=3.11.9.0'
 gem 'therubyracer', '=0.11.0beta1'
+gem 'activeadmin'
 
 #respec for the development and test environments
 group :development, :test do

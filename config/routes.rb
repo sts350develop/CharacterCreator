@@ -1,4 +1,10 @@
 CharacterCreator::Application.routes.draw do
+  devise_for :dolls
+
+  ActiveAdmin.routes(self)
+
+  devise_for :admin_users, ActiveAdmin::Devise.config
+
   get "authentications/create"
   get "authentications/destroy"
   get "dolls/new"
