@@ -1,5 +1,5 @@
 <p id="notice"><%= notice %></p>
 
-
-<%= link_to 'Edit', edit_doll_path(@doll) %> |
+<% if can? :update, @doll %>
+<%= link_to 'Edit', edit_doll_path(@doll) %> <%end%>|
 <%= link_to 'Back', dolls_path %>

@@ -10,4 +10,5 @@ class User < ActiveRecord::Base
   has_many :images
   has_many :dolls
   has_many :authentications
+
 end

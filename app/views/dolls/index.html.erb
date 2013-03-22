@@ -10,13 +10,17 @@
 <% @dolls.each do |doll| %>
   <tr>
     <td><%= link_to 'Show', doll %></td>
+    <% if can? :upadte, @doll %>
     <td><%= link_to 'Edit', edit_doll_path(doll) %></td>
+        <%end%>
     <td><%= link_to 'Destroy', doll, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
+<% if can? :create, Doll %>
 
 <%= link_to t('.new', :default => t("helpers.links.new")),
             new_doll_path, :class => 'btn' %>
+<%end%>
